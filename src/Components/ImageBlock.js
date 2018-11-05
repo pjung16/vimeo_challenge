@@ -22,6 +22,7 @@ class ImageBlock extends Component {
         <div className="imgContainer">
           <img
             src={this.props.imgsrc}
+            alt="Event Picture"
           />
         </div>
         <div className="textContainer">

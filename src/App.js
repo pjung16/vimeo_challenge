@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import ImageBlock from './Components/ImageBlock';
+import Carousel from './Components/Carousel';
 
 class App extends Component {
 
@@ -42,6 +42,7 @@ class App extends Component {
           imgsrc={"/vimeopic3.jpg"}
           style={thirdBlock}
         />
+        <Carousel/>
       </div>
     );
   }

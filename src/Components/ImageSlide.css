@@ -1,0 +1,127 @@
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imgBackground {
+  filter: blur(10px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.backgroundTint {
+  height: 100%;
+  opacity: 0.8;
+}
+
+.darkTint {
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+}
+
+.contentContainer {
+  margin: 0 auto;
+  width: 67%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  grid-column-gap: 40px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  justify-self: start;
+  padding-top: 13vh;
+}
+
+.movieTitle {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.movieDescription {
+  color: white;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.moviePoster {
+
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buyNow {
+  margin-right: 8px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.watchTrailer {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border-color: #bfbfbf;
+  border-width: 0.5px;
+  color: white;
+  background: rgba(0,0,0,0);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1035px) and (min-width: 880px) {
+    .contentContainer {
+      grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+@media screen and (max-width: 879px) and (min-width: 725px) {
+    .contentContainer {
+      width: 80%;
+    }
+    .infoContainer {
+      padding-top: 17vh;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    .contentContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .infoContainer {
+      padding-top: 2vh;
+      align-items: center;
+    }
+    .moviePoster {
+      width: 60%;
+      margin-top: -5vh;
+    }
+}
