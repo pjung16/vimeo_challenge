@@ -10,7 +10,7 @@ class App extends Component {
     const firstBlock = {
       backgroundColor: "white",
       color: "black",
-      padding: "100px 0 100px 0"
+      padding: "120px 0 120px 0"
     };
 
     const secondBlock = {
